@@ -1,0 +1,37 @@
+<!doctype html>
+<!--
+  Source of assets/banner.png, the banner in the profile README.
+  To change it, edit this file, open it in a browser at 2x scale and
+  screenshot the #banner element (880 x 230 CSS pixels) over the PNG.
+  It needs the Inter font installed to look the same.
+-->
+<html><head><meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: transparent; padding: 20px; }
+  #banner { width: 880px; height: 230px; border-radius: 12px; overflow: hidden; background: #f3f4f6; border: 1px solid #d5d8de; font-family: Inter, sans-serif; display: flex; flex-direction: column; }
+  .top { height: 44px; display: flex; align-items: center; justify-content: space-between; padding: 0 22px; font: 600 13px Inter, sans-serif; color: #4b5563; border-bottom: 1px solid #d5d8de; background: #fff; }
+  .top b { color: #111827; font-weight: 700; }
+  .sep { color: #9ca3af; font-weight: 400; margin: 0 6px; }
+  .pill { background: #dcfce7; color: #166534; border-radius: 99px; padding: 4px 12px; font-weight: 700; }
+  .arms { flex: 1; display: flex; gap: 16px; padding: 16px 22px; }
+  .arm { flex: 1; background: #fff; border: 1px solid #d5d8de; border-radius: 10px; padding: 16px 20px; position: relative; display: flex; flex-direction: column; justify-content: center; }
+  .arm small { font: 700 12px Inter, sans-serif; letter-spacing: 2px; color: #6b7280; }
+  .arm h3 { font: 800 30px "Inter Display", Inter, sans-serif; letter-spacing: -1px; margin: 6px 0 14px; color: #9ca3af; }
+  .track { height: 10px; background: #e5e7eb; border-radius: 99px; overflow: hidden; }
+  .track i { display: block; height: 100%; background: #9ca3af; border-radius: 99px; }
+  .arm.win { border: 2.5px solid #16a34a; box-shadow: 0 6px 18px rgba(22, 163, 74, .18); }
+  .arm.win h3 { color: #111827; }
+  .arm.win small { color: #166534; }
+  .arm.win .track i { background: #16a34a; }
+  .badge { position: absolute; top: 14px; right: 16px; background: #16a34a; color: #fff; font: 800 12px Inter, sans-serif; letter-spacing: 1.5px; border-radius: 6px; padding: 5px 10px; }
+</style></head>
+<body>
+<div id="banner">
+  <div class="top"><div>Experiment<span class="sep">|</span><b>What is an engineer for?</b></div><div class="pill">Rolled out to 100%</div></div>
+  <div class="arms">
+    <div class="arm"><small>A | CONTROL</small><h3>Writing code.</h3><div class="track"><i style="width:34%"></i></div></div>
+    <div class="arm win"><div class="badge">WINNER</div><small>B | VARIANT</small><h3>Shipping products.</h3><div class="track"><i style="width:92%"></i></div></div>
+  </div>
+</div>
+</body></html>
